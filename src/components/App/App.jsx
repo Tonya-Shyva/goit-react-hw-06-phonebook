@@ -1,5 +1,4 @@
 import { ToastContainer } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Contacts } from 'components/ContactList/ContactList';
 import { Filter } from 'components/Filter/Filter';
@@ -13,7 +12,7 @@ export const App = () => {
       <Title as="h2">Contacts</Title>
       <Filter></Filter>
       <Contacts></Contacts>
-      <ToastContainer />
+      <ToastContainer position="top-center" autoClose={3000} theme="dark" />
     </AppContainer>
   );
 };

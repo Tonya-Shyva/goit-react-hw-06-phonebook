@@ -22,7 +22,7 @@ export const Contacts = () => {
     const filterContactsList = contacts.filter(contact => {
       return contact.name.toLowerCase().includes(normalizedFilter);
     });
-    // console.log(filterContactsList);
+
     const filterContacts =
       filterContactsList.length === 0
         ? toast.info('No results find') && []

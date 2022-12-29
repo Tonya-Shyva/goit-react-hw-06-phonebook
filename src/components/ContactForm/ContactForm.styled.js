@@ -11,7 +11,6 @@ export const FormStyled = styled.form`
 
 export const FormLabelStyled = styled.label`
   font-size: 20px;
-  /*font-weight: bold;*/
 `;
 
 export const FormInputStyled = styled.input`
