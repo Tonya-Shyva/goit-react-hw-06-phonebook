@@ -25,7 +25,7 @@ export const Contacts = () => {
     // console.log(filterContactsList);
     const filterContacts =
       filterContactsList.length === 0
-        ? toast.info('No results find')
+        ? toast.info('No results find') && []
         : filterContactsList;
     return filterContacts;
   };
