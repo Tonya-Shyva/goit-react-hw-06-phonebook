@@ -1,11 +1,10 @@
-import { BtnStyled } from 'components/ContactForm/ContactForm.styled';
-// import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteContact } from 'redux/contactsSlice';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { getContacts, getFilter } from 'redux/selectors';
 
+import { BtnStyled } from 'components/ContactForm/ContactForm.styled';
+import { deleteContact } from 'redux/contactsSlice';
+import { getContacts, getFilter } from 'redux/selectors';
 import {
   ContactItem,
   ContactListStyled,
@@ -49,14 +48,3 @@ export const Contacts = () => {
     </ContactsWrap>
   );
 };
-
-// Contacts.propTypes = {
-//   contacts: PropTypes.arrayOf(
-//     PropTypes.exact({
-//       id: PropTypes.string.isRequired,
-//       name: PropTypes.string.isRequired,
-//       number: PropTypes.string.isRequired,
-//     })
-//   ),
-//   handleDelete: PropTypes.func.isRequired,
-// };
