@@ -22,11 +22,12 @@ export const Contacts = () => {
     const filterContactsList = contacts.filter(contact => {
       return contact.name.toLowerCase().includes(normalizedFilter);
     });
-    console.log(filterContactsList);
-    filterContactsList.length === 0
-      ? toast.info('No results find')
-      : filterContactsList;
-    return filterContactsList;
+    // console.log(filterContactsList);
+    const filterContacts =
+      filterContactsList.length === 0
+        ? toast.info('No results find')
+        : filterContactsList;
+    return filterContacts;
   };
 
   return (
